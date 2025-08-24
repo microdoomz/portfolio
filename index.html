@@ -14,8 +14,9 @@
   <canvas id="fxCanvas" aria-hidden="true"></canvas>
   <canvas id="fluidCanvas" aria-hidden="true"></canvas>
   <nav class="glass-nav" aria-label="Primary">
-    <div class="nav-container compact minimal">
-      <div class="nav-links" role="menubar">
+    <div class="nav-container compact minimal" id="navContainer">
+      <button id="navToggle" class="icon-btn glass" aria-label="Menu" aria-expanded="false" aria-controls="navLinks" title="Menu" style="display:none">☰</button>
+      <div class="nav-links" id="navLinks" role="menubar">
         <a href="#home" role="menuitem" class="nav-link glass"><i class="fa fa-house"></i> Home</a>
         <a href="#about" role="menuitem" class="nav-link glass"><i class="fa fa-user"></i> About</a>
         <a href="#projects" role="menuitem" class="nav-link glass"><i class="fa fa-code"></i> Projects</a>
@@ -102,7 +103,8 @@
         <h2 id="projects-title" class="section-title center">My Projects</h2>
         <p class="section-sub center">Building the future one focused commit at a time.</p>
       </div>
-      <div class="projects-grid two-col">
+  <div class="projects-wrapper">
+  <div class="projects-grid two-col">
   <article class="project glass large hover-grow">
           <div class="project-media icon">
             <span class="badge live">Live</span>
@@ -168,6 +170,7 @@
           </div>
         </article>
         <div id="dynamicProjects" class="projects-extra"></div>
+      </div>
       </div>
     </section>
 
